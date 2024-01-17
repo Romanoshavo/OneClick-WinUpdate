@@ -1,4 +1,4 @@
-@echo off
+h@echo off
 echo Creating a backup...
 wbadmin start backup -backupTarget:C: -include:C:\ -allCritical -quiet
 
@@ -8,6 +8,6 @@ timeout /t 10 /nobreak
 
 echo Installing updates...
 powershell -Command "Install-Module PSWindowsUpdate -Force -AllowClobber -Scope CurrentUser; Import-Module PSWindowsUpdate; Get-WUInstall -AcceptAll -Force -AutoReboot"
-
+echo Enjoy By RasingDead 2024
 echo Update process completed. Press any key to exit.
 pause >nul
