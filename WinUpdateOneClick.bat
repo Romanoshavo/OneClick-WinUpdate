@@ -1,4 +1,4 @@
-h@echo off
+@echo off
 echo Creating a backup...
 wbadmin start backup -backupTarget:C: -include:C:\ -allCritical -quiet
 
